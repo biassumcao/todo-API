@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm"
-import { Todo } from '../models/todo'
+import { Todo } from '../models/todo.model'
 export const AppDataSource = new DataSource({
     type: "mongodb",
     url: "mongodb://localhost:27017",

@@ -1,6 +1,6 @@
 import { FastifyRequest, FastifyReply} from 'fastify';
-import TodoService from '../services/todo';
-import { ITodo } from '../types/todo';
+import TodoService from '../services/todo.service';
+import { ITodo } from '../types/todo.type';
 
 export const create = async (req: FastifyRequest<{Body: ITodo}>, res: FastifyReply): Promise<FastifyReply> => {
   const response = await TodoService.create(req.body);

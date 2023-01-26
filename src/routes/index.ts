@@ -1,6 +1,6 @@
 const fastify = require('fastify');
 import { AppDataSource } from './datasource';
-import * as controller from '../controllers/todo';
+import * as controller from '../controllers/todo.controller';
 import { config } from 'dotenv';
 
 const envfile = `.env.${process.env.NODE_ENV}`;

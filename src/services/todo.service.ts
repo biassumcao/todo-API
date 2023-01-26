@@ -1,5 +1,5 @@
-import { Todo } from '../models/todo';
-import { ITodo } from '../types/todo';
+import { Todo } from '../models/todo.model';
+import { ITodo } from '../types/todo.type';
 import { ObjectID } from 'mongodb';
 import { AppDataSource } from '../routes/datasource';
 
